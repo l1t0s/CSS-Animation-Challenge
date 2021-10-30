@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Fruktur&family=Irish+Grover&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8a2ce2;
+    overflow: hidden;
+}
+
+.container {
+    width: 45%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    font-family: 'Fruktur', cursive; 
+    color: chocolate;
+    animation: header;
+    animation-duration: 3s;
+    position: relative; /*top-right-bottom-left*/
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 100px;}
+}
+
+.main {
+    font-family: 'Irish Grover', cursive;
+    color: rgb(37, 202, 45);
+    line-height: 1.5;
+}
+
+.text-left {
+    animation: text-left;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text-left {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.text-right {
+    text-align: right;
+    position: relative;
+    margin-top: 32px;
+    animation: right;
+    animation-duration: 5s;
+}
+
+@keyframes right {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    display: inline-block;
+    margin: 2rem;   
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Fruktur', cursive;
+    text-transform: uppercase;
+    border: 2px solid white;
+    animation: aniBTN;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBTN {
+    0% {opacity: 0;} /*0-1*/
+    100% {opacity: 1;}
+}
